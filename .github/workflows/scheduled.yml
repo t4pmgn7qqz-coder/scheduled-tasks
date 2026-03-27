@@ -44,4 +44,5 @@ jobs:
           OWM_API_KEY: ${{ secrets.OWM_API_KEY }}
           ACCOUNT_SID: ${{ secrets.ACCOUNT_SID }}
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          MOBILE_NUMBER: ${{ secrets.MOBILE_NUMBER }}
         run: python main.py
