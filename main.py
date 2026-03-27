@@ -24,7 +24,7 @@ data = response.json()
 
 will_rain = False
 weather_codes = [data["list"][x]["weather"][0]["id"] for x in range(0,len(data["list"])) ]
-print(weather_codes)
+]
 for code in weather_codes:
     if code < 700:
         will_rain = True
@@ -33,8 +33,8 @@ if will_rain:
     client = Client(account_sid, auth_token)
     message = client.messages.create(
         body="It's going to rain today. Remember to bring a rain jacket!",
-        from_= os.environ.get("+14785516462"),
-        to= os.environ.get("+31627332308"),
+        from_= ]"+14785516462",
+        to= "+31627332308",
     )
 print(message.status)
 
