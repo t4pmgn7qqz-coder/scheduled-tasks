@@ -33,8 +33,8 @@ if will_rain:
     client = Client(account_sid, auth_token)
     message = client.messages.create(
         body="It's going to rain today. Remember to bring a rain jacket!",
-        from_= os.environ.get("TWIIO_VIRTUAL_NUMBER"),
-        to= os.environ.get("MOBILE_NUMBER"),
+        from_= os.environ.get("+14785516462"),
+        to= os.environ.get("+31627332308"),
     )
 print(message.status)
 
