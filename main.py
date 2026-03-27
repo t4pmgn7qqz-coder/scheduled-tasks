@@ -24,7 +24,7 @@ data = response.json()
 
 will_rain = False
 weather_codes = [data["list"][x]["weather"][0]["id"] for x in range(0,len(data["list"])) ]
-]
+
 for code in weather_codes:
     if code < 700:
         will_rain = True
